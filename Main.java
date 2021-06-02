@@ -1,3 +1,5 @@
+package HT1_Radio;
+
 /*
 Página principal
 Andrea Lam, 20102
@@ -10,6 +12,7 @@ Este programa tiene como objetivo el crear una simulación de una radio
 */
 
 import java.util.Scanner;
+
 
 class Main {
   public static void main(String[] args) { //creando el metodo main
@@ -105,16 +108,16 @@ class Main {
         case 5:
           // Seleccionar una emisora guardada
           System.out.println("¿Que botón de la radio desea escuchar?");
-          int b; //creando la variable del boton a Seleccionar
+          int boton2; //creando la variable del boton a Seleccionar
 
           while(true){
             try{
                 System.out.print("Boton: ");
-                b = scan.nextInt();
+                boton2 = scan.nextInt();
                 System.out.println("\n");
                 //(Programación defensiva)
                 //Protección por si el usuario elige un número menor a uno o mayor a dos, seguirá pidiendo la opción. 
-                if(b > 12 || b < 1){
+                if(boton2 > 12 || boton2 < 1){
                     System.out.println("Solo se aceptan numeros del 1 al 12, intente de nuevo!");
                 }
                 //Si el usuario ingresa los datos correctos terminará el ciclo while
@@ -128,7 +131,7 @@ class Main {
           }
 
 
-          radio.emisora(b);//llamando el metodo de seleccionar boton
+          radio.emisora(boton2);//llamando el metodo de seleccionar boton
 
           break;
         case 6:

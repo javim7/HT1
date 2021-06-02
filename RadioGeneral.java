@@ -1,3 +1,4 @@
+package HT1_Radio;
 /*
 Interfaz
 Andrea Lam, 20102
@@ -9,20 +10,20 @@ Esta clase es utilizada para poder saber que metodos van a ser necesarios en el 
 
 */
 
-public interface RadioGeneral {
+public interface RadioGeneral { //creando la interfaz de la radio
 
-    boolean isON();
+    boolean isON(); //metodo para asegurar que la radio este encendida
   
-    void encender();
+    void encender(); //metodo para poder encender la radio
   
-    void apagar();
+    void apagar(); //metodo para poder apagar la radio
     
-    void incrementar();
+    void incrementar(); //meotodo para avanzar en el dial de emisoras
   
-    boolean asignar(int pos);
+    boolean asignar(int pos); //metodo para asignar emisoreas a cualquiera de los 12 botones
   
-    boolean emisora(int pos);
+    boolean emisora(int pos); //metodo para seleccionar uno de esos botones con sus respectivas emisoras
   
-    void frecuencia();
+    void frecuencia(); //metodo para cambiar entre am y fm
   
   }

@@ -1,3 +1,4 @@
+package HT1_Radio;
 /*
 Página principal
 Andrea Lam, 20102
@@ -29,6 +30,10 @@ boolean asig = false;// viendo si ya se asigno un boton o no
 
   }
 
+  
+  /** 
+   * @return boolean
+   */
   //creando los metodos que se utilizaran para hacer que la radio funcione
 
   //metodo para ver si la radio esta encendida o no y retornar un valor boolean true si si, y viceversa
@@ -116,6 +121,11 @@ boolean asig = false;// viendo si ya se asigno un boton o no
   }
 
 
+  
+  /** 
+   * @param pos
+   * @return boolean
+   */
   //metodo para guardar una emisiora en uno de los 12 botones
   // crea lista para el am y el fm
   // mostrar la lista de las emisoras si es am mostrar la lista de am
@@ -158,6 +168,11 @@ boolean asig = false;// viendo si ya se asigno un boton o no
 
   }
 
+  
+  /** 
+   * @param pos
+   * @return boolean
+   */
   //seleccionar una de las emisoras guardadas 
   public boolean emisora(int pos) {
 
